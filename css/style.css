@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    z-index: 1;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-top: 4.5rem;
+    background-color: cadetblue;
+}
+
+nav ul, 
+nav ul li a {
+    text-decoration: none;
+    list-style-type: none;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.2rem;
+    color: white;
+    padding: 0.2rem 1rem;
+}
+
+nav a:focus {
+    background-color: #ffffff;
+    color: cadetblue;
+    border-radius: 5px;
+}
+
+nav a.active,
+nav a[aria-current="page"] {
+    background-color: #ffffff; /* visible background for current page */
+    color: cadetblue;
+    border-radius: 5px;
+    pointer-events: none;  /* makes it not clickable */
+    cursor: default;
+}
+
+
+
+.logo {
+    z-index: -1;
+    position: absolute;
+    justify-self: center;
+    top: -20px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-top: 50px;
+}
+
+.banner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+    background-size: cover; /* Ensure the background image covers the entire banner */
+    background-position: center; /* Center the background image */
+}
+
+.bannertext {
+    font-size: 3rem;
+    z-index: 100;
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    color: #ffffff;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 700px; /* Set a fixed height for the banner container */
+    overflow: hidden;
+    z-index: 2; /* Ensure the banner container is above other content */
+}
+
+.banner1 {
+    background-image: url('/img/output-37.png');
+}
+.banner2 {
+    background-image: url('/img/pe-pipe.jpg');
+}
+.banner3 {
+    background-image: url('/img/shutterstock_1326117767-min-scaled.jpg');
+}
+
+
+
+.scroll-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 10px;
+    font-size: 16px;
+    background-color: cadetblue;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+footer {
+    position: relative;
+    top: 20px;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    background-color: #f1f1f1;
+    text-align: center;
+    line-height: 50px;
+}
