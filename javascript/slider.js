@@ -2,6 +2,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const banners = document.querySelectorAll('.banner');
     let currentIndex = 0;
 
+    // Initialize: set first banner visible, others off-screen
+    banners.forEach((banner, index) => {
+        if (index === 0) {
+            banner.style.transform = 'translateX(0)';
+            banner.style.zIndex = 10;
+        } else {
+            banner.style.transform = 'translateX(100%)';
+            banner.style.zIndex = -1;
+        }
+    });
+
     function showNextBanner() {
         banners[currentIndex].style.transform = 'translateX(-100%)';
         banners[currentIndex].style.zIndex = -1; // Move the current banner behind
