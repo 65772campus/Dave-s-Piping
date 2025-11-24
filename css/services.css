@@ -11,9 +11,34 @@
 
 .service-banner1 {
     background-image: url('/img/commercial-piping-fabrication-installation-services-img.jpg');
+    margin-top: 40px;
     position: relative;
     width: 100%;
     height: 550px; /* Set a fixed height for the banner container */
+    overflow: hidden;
+    z-index: 2; /* Ensure the banner container is above other content */
+    background-size: cover;
+    background-position: center;
+}
+
+.service-banner2 {
+    background-image: url('/img/image-2024-08-13T135802.460.png');
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    height: 500px; /* Set a fixed height for the banner container */
+    overflow: hidden;
+    z-index: 2; /* Ensure the banner container is above other content */
+    background-size: cover;
+    background-position: center;
+}
+
+.service-banner3 {
+    background-image: url('/img/activite-eie-v2.webp');
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    height: 500px; /* Set a fixed height for the banner container */
     overflow: hidden;
     z-index: 2; /* Ensure the banner container is above other content */
     background-size: cover;
