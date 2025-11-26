@@ -1,0 +1,58 @@
+main {
+    display: grid;
+    grid-template-areas: 'maps-location contact-info'
+                         'maps-location  fill-form';
+    
+}
+
+.maps-location {
+    grid-area: maps-location;
+    padding: 20px;
+}
+
+.contact-info{
+    grid-area: contact-info;
+    padding: 20px;
+}
+
+.contact-info a {
+    text-decoration: none;
+}
+
+
+#phone-img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+#email-img {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+.fill-form {
+    grid-area: fill-form;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fill-form input, .fill-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none; /* disables resizing */
+    overflow: auto; /* keeps scrollbars if content exceeds box */
+}
